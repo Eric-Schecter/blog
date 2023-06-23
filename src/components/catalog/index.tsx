@@ -9,7 +9,7 @@ export const Catalog = () => {
   >
     <div className={styles.mainContainer}>
       {posts.map((post, index) =>
-        <Link to={`${post.id + index}`}>
+        <Link to={`${index}`}>
           <div
             key={post.id + index}
             className={styles.container}
