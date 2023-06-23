@@ -1,0 +1,34 @@
+.content {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    display: inline-block;
+  }
+}
+
+.mainContainer {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-auto-rows: auto;
+  grid-gap: 50px;
+
+  & .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    & .profile {
+      width: 80%;
+    }
+
+    & .title {
+      font-size: 1.2em;
+    }
+
+  }
+}

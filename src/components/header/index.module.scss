@@ -1,0 +1,17 @@
+.header {
+  width: 100vw;
+  height: 80px;
+  
+  position: sticky;
+  top:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  border-bottom: 1px solid lightgrey;
+
+  & .profile{
+    height: 80px;
+    border-radius: 50%;
+  }
+}

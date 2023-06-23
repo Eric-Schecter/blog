@@ -1,0 +1,21 @@
+.content {
+  display: flex;
+  justify-content: center;
+  overflow-y: scroll;
+  flex: 1;
+  padding-top: 20px;
+}
+
+.container {
+  width: 50%;
+  height: 100%;
+
+  & .title {
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

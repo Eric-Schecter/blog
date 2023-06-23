@@ -5,18 +5,25 @@
   "private": true,
   "dependencies": {
     "gl-matrix": "^3.4.3",
+    "markdown-to-jsx": "^7.1.8",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-router-dom": "^6.7.0",
+    "react-markdown": "^8.0.5",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.3",
+    "react-syntax-highlighter": "^15.5.0",
+    "rehype-mathjax": "^4.0.2",
+    "remark-math": "^5.1.1",
     "typescript": "^3.7.5"
   },
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "eject": "react-scripts eject",
+    "gene": "ts-node src/gene.ts",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "pb": "npm run gene && npm run predeploy && npm run deploy && git push -u origin master"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -36,11 +43,15 @@
   "devDependencies": {
     "@types/react": "^16.9.45",
     "@types/react-dom": "^16.9.8",
+    "@types/react-mathjax": "^1.0.1",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/react-syntax-highlighter": "^15.5.6",
     "gh-pages": "^4.0.0",
     "glslify": "^7.1.1",
     "glslify-loader": "^2.0.0",
     "node-sass": "^6.0.1",
     "raw-loader": "^4.0.2",
-    "react-app-rewired": "^2.2.1"
+    "react-app-rewired": "^2.2.1",
+    "ts-node": "^10.9.1"
   }
 }
