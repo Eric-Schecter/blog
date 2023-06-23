@@ -16,7 +16,7 @@ export const Catalog = () => {
           >
             <img className={styles.profile} alt='' src={post.profile} />
             <p className={styles.title}>{post.title}</p>
-            <p className={styles.title}>{post.date}</p>
+            <p className={styles.date}>{post.date}</p>
           </div>
         </Link>
       )}
