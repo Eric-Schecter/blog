@@ -27,7 +27,6 @@ class BlogGenerator {
           const birthtime = fs.statSync(`${dir}/${file}`).birthtime as Date;
           const date = `${birthtime.getFullYear()}-${birthtime.getMonth() + 1}-${birthtime.getDate()}`;
           const matches = content.match(/.(gif|png|jpg|jpeg)\]\((.+?)#/);
-          console.log(matches)
           const profile = (matches && matches[2]) || '';
           contents.push({
             id: index,
