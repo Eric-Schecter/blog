@@ -13,5 +13,11 @@
   & .profile{
     height: 80px;
     border-radius: 50%;
+    border:1px solid white;
+    transition: border 0.1s;
+
+    &:hover{
+      border: 1px solid dodgerblue;
+    }
   }
 }
