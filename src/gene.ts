@@ -17,6 +17,7 @@ class BlogGenerator {
         return;
       }
       const contents: Post[] = [];
+      let loadedCount = 0;
       files.forEach((file, index) => {
         fs.readFile(`${dir}/${file}`, 'utf-8', (err: Error, content: string) => {
           if (err) {
@@ -35,8 +36,8 @@ class BlogGenerator {
             date,
             profile,
           })
-
-          if (index === files.length - 1) {
+          loadedCount++;
+          if (loadedCount === files.length) {
             contents.sort((pre, curr) => new Date(curr.date).getTime() - new Date(pre.date).getTime());
             const data = JSON.stringify(contents);
             fs.writeFileSync('src/posts.json', data);
