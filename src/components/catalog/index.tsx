@@ -9,9 +9,8 @@ export const Catalog = () => {
   >
     <div className={styles.mainContainer}>
       {posts.map((post, index) =>
-        <Link to={`${index}`}>
+        <Link key={post.id} to={`${index}`}>
           <div
-            key={post.id + index}
             className={styles.container}
           >
             <img className={styles.profile} alt='' src={post.profile} />

@@ -1,13 +1,13 @@
 ## 最终效果图：
 ![profile.gif](https://cdn.nlark.com/yuque/0/2023/gif/34898159/1675322994541-2708683b-22c9-480d-a21d-1b15fd712ced.gif#averageHue=%23000100&clientId=u8793c2e8-68fb-4&from=paste&height=492&id=u579abb7c&originHeight=582&originWidth=1000&originalType=binary&ratio=1&rotation=0&showTitle=false&size=5120216&status=done&style=none&taskId=u279b6680-f632-4f32-80dd-0acab92ab25&title=&width=844.6666870117188)
-Github: [https://github.com/Eric-Schecter/particles-demo](https://github.com/Eric-Schecter/particles-demo)
+Github: [https://github.com/Eric-Schecter/particles-demo](https://github.com/Eric-Schecter/particles-demo)  
 Demo: [https://simple-particles-demo.netlify.app/](https://simple-particles-demo.netlify.app/)
 ## 项目说明
 粒子效果是非常有趣的渲染效果，借助于GPU的加速计算，使得实时交互变为可能。
 本Demo主要基于WebGL的transform feedback实现粒子交互效果。
 技术栈：React，WebGL，gl-matrix
-除了transform feedback，还可以基于framebuffer以纹理为计算结果存储的解决方案，如Threejs中的GPUComputationRenderer
-以下是基于Threejs中GPUComputationRenderer的粒子系统Demo
+除了transform feedback，还可以基于framebuffer以纹理为计算结果存储的解决方案，如Threejs中的GPUComputationRenderer  
+以下是基于Threejs中GPUComputationRenderer的粒子系统Demo  
 [https://music-visualizer-project.netlify.app/](https://music-visualizer-project.netlify.app/) 音乐可视化播放器  
 [https://arknights-particle.netlify.app/](https://arknights-particle.netlify.app/) 借鉴于曾今出现在明日方舟官网上的粒子效果
 

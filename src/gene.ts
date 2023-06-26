@@ -35,7 +35,9 @@ class BlogGenerator {
             date,
             profile,
           })
+
           if (index === files.length - 1) {
+            contents.sort((pre, curr) => new Date(curr.date).getTime() - new Date(pre.date).getTime());
             const data = JSON.stringify(contents);
             fs.writeFileSync('src/posts.json', data);
           }
